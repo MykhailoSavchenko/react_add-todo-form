@@ -101,7 +101,11 @@ export const App = () => {
         <div className="field">
           <label>
             {'User '}
-            <select data-cy="userSelect" onChange={handleChooseName}>
+            <select
+              data-cy="userSelect"
+              onChange={handleChooseName}
+              value={userId}
+            >
               {userId ? (
                 <option value={0} disabled>
                   Choose a user
